@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Age Calculater</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      console.log("JavaScript loaded");
+    </script>
+  </head>
+  <body>
+    <h1>Age Calculater</h1>
+    <p>Enter your birth date:</p>
+    <input type="date" id="birthdate" />
+    <br /><br />
+    <select onchange="handleOption(this.value)">
+      <option value="">Choose an option</option>
+      <option value="Age">Calculate Age</option>
+      <option value="day">Birth Day</option>
+      <option value="days">Days Lived</option>
+    </select>
+    <button onclick="calculateAge()">Calculate Age</button>
+    <button onclick="changeColor()">Change Background</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
